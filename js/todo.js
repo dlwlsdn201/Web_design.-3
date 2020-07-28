@@ -4,7 +4,6 @@ toDoList = document.querySelector('.js-todoList');
 
 
 //LocalStorage List에서 'toDos' key를 정의.
-
 const TODOS_LS = 'toDos';
 
 
@@ -64,7 +63,7 @@ function handleSubmit(event){
 //JSON.parse() ---> 문자화된 데이터를 JS의 객체로 변환
 function loadToDos(){
     const loadedToDos = localStorage.getItem(TODOS_LS);
-    if (loadedToDos !== null){
+    if (loadedToDos !== null){ //로컬스토리지에 저장된 값이 null이 아니라면?
         const parsedToDos = JSON.parse(loadedToDos);
         parsedToDos.forEach(function (toDo){
             paintToDo(toDo.text);
