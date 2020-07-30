@@ -36,7 +36,7 @@ function paintToDo(text){
     const list = document.createElement("li"); //toDo을 표현할 li 요소 생성.
     const delBtn = document.createElement("button"); //삭제 버튼 생성
     const span = document.createElement("span"); //빈 span 생성
-    const newId = toDos.lengh + 1 //Todo 요소마다 붙일 Id
+    const newId = toDos.length + 1 //Todo 요소마다 붙일 Id
     delBtn.innerHTML = "❌"; //삭제 버튼에 삭제 그림 삽입.
     delBtn.addEventListener("click",deleteToDo); //삭제 버튼에 클릭 이벤트 추가.
     span.innerText = text; //생성한 빈 span 요소에 text 파라미터 입력
