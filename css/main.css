@@ -2,14 +2,31 @@ body{
     color : white;
 }
 
-.wrap{
+ul{
+    display: inline-block;
+}
+
+li > span{
+    border: 1px solid black;
+    background: rgba(125, 125, 125, 0.3);
+    padding: 0 15px;
+    border-radius: 5%;
+}
+
+li{
+    margin: 5px auto;
+}
+
+.js-time{
     background-color: rgba(56, 56, 56,0.4);
-    width: 12%;
-    padding: 10px 20px;
+    width: 150px;
+    padding: 15px 20px;
     justify-content: center;
     align-content: center;
-    padding-top: 2px;
-    
+}
+
+.js-title{
+    margin: 0 auto;
 }
 
 .form{
@@ -27,4 +44,18 @@ body{
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+.bgm{
+    position: fixed;
+    bottom: 0;
+}
+
+audio{
+    bottom: 0%;
+    left: 0%;
+    position: fixed;
+    border-radius: 0%;
+    width: 30%;
+    opacity: 0.8;
 }
