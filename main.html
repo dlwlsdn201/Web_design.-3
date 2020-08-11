@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body onload="loop()">
     <div class="wrap">
         <div class='js-time'>
             <h1 class='js-title'>00:00:00</h1>
@@ -23,13 +23,13 @@
     </form>
     <ul class="js-todoList" type="square">
     </ul>
-<footer>
-    <audio src="" controls=""></audio>
-</footer>
+    <span id="playinfo"></span>
+    <audio src="" id="player" controls=""></audio>
     <script src="./js/time.js"></script>
     <script src="./js/todo.js"></script>
     <script src="./js/greeting.js"></script>
     <script src="./js/weather.js"></script>
     <script src="./js/background.js"></script>
+    <script src="./js/bgm.js"></script>
 </body>
 </html>
